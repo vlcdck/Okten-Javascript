@@ -139,23 +139,23 @@
 
 // next task uses too
 
-const suits = ['spade', 'diamond', 'heart', 'clubs'];
-const values = ['6', '7', '8', '9', '10', 'jack', 'queen', 'king', 'ace'];
-
-const allCards = [];
-
-for (const suit of suits) {
-    for (const value of values) {
-        const card = {cardSuit: suit, value: value};
-        if (suit === 'heart' || suit === 'diamond') {
-            card.color = 'red';
-        } else {
-            card.color = 'black';
-        }
-        allCards.push(card);
-    }
-}
-
+// const suits = ['spade', 'diamond', 'heart', 'clubs'];
+// const values = ['6', '7', '8', '9', '10', 'jack', 'queen', 'king', 'ace'];
+//
+// const allCards = [];
+//
+// for (const suit of suits) {
+//     for (const value of values) {
+//         const card = {cardSuit: suit, value: value};
+//         if (suit === 'heart' || suit === 'diamond') {
+//             card.color = 'red';
+//         } else {
+//             card.color = 'black';
+//         }
+//         allCards.push(card);
+//     }
+// }
+//
 // console.log(allCards);
 
 // console.log(allCards.find(card => card.value === 'ace' && card.cardSuit === 'spade'));
@@ -165,7 +165,7 @@ for (const suit of suits) {
 // console.log(allCards.filter(card => card.color === 'red'));
 //
 // console.log(allCards.filter(card => card.cardSuit === 'diamond'));
-// console.log(allCards.filter(card => card.cardSuit === 'clubs' && (card.value === '10' || card.value === '11' || card.value === 'jack' || card.value === 'queen' || card.value === 'king' || card.value === 'ace')));
+// console.log(allCards.filter(card => card.cardSuit === 'clubs' && (card.value === '10' || card.value === 'jack' || card.value === 'queen' || card.value === 'king' || card.value === 'ace')));
 
 //---------------------------------------------------------------------
 
@@ -204,7 +204,7 @@ for (const suit of suits) {
 //     hearts:[],
 //     clubs:[],
 // });
-//
+// //
 // console.log(reduce);
 
 // task 11
@@ -216,75 +216,37 @@ for (const suit of suits) {
 // --написати пошук всіх об'єктів, в яких в modules є sass
 // --написати пошук всіх об'єктів, в яких в modules є docker
 
-// let coursesArray = [
-//     {
-//         title: 'JavaScript Complex',
-//         monthDuration: 5,
-//         hourDuration: 909,
-//         modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'node.js']
-//     },
-//     {
-//         title: 'Java Complex',
-//         monthDuration: 6,
-//         hourDuration: 909,
-//         modules: ['html',
-//             'css',
-//             'js',
-//             'mysql',
-//             'mongodb',
-//             'angular',
-//             'aws',
-//             'docker',
-//             'git',
-//             'java core',
-//             'java advanced']
-//     },
-//     {
-//         title: 'Python Complex',
-//         monthDuration: 6,
-//         hourDuration: 909,
-//         modules: ['html',
-//             'css',
-//             'js',
-//             'mysql',
-//             'mongodb',
-//             'angular',
-//             'aws',
-//             'docker',
-//             'python core',
-//             'python advanced']
-//     },
-//     {
-//         title: 'QA Complex',
-//         monthDuration: 4,
-//         hourDuration: 909,
-//         modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'git', 'QA/QC']
-//     },
-//     {
-//         title: 'FullStack',
-//         monthDuration: 7,
-//         hourDuration: 909,
-//         modules: ['html',
-//             'css',
-//             'js',
-//             'mysql',
-//             'mongodb',
-//             'react',
-//             'angular',
-//             'aws',
-//             'docker',
-//             'git',
-//             'node.js',
-//             'python',
-//             'java']
-//     },
-//     {
-//         title: 'Frontend',
-//         monthDuration: 4,
-//         hourDuration: 909,
-//         modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'sass']
-//     }
-// ];
+// let coursesArray = [{
+//     title: 'JavaScript Complex',
+//     monthDuration: 5,
+//     hourDuration: 909,
+//     modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'node.js']
+// }, {
+//     title: 'Java Complex',
+//     monthDuration: 6,
+//     hourDuration: 909,
+//     modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'angular', 'aws', 'docker', 'git', 'java core', 'java advanced']
+// }, {
+//     title: 'Python Complex',
+//     monthDuration: 6,
+//     hourDuration: 909,
+//     modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'angular', 'aws', 'docker', 'python core', 'python advanced']
+// }, {
+//     title: 'QA Complex',
+//     monthDuration: 4,
+//     hourDuration: 909,
+//     modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'git', 'QA/QC']
+// }, {
+//     title: 'FullStack',
+//     monthDuration: 7,
+//     hourDuration: 909,
+//     modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'node.js', 'python', 'java']
+// }, {
+//     title: 'Frontend',
+//     monthDuration: 4,
+//     hourDuration: 909,
+//     modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'sass']
+// }];
 
 // console.log(coursesArray.filter(value => value.modules.includes('sass')));
 // console.log(coursesArray.filter(value => value.modules.includes('docker')));
