@@ -91,8 +91,3 @@ fetch('https://dummyjson.com/carts')
             document.body.append(wrapCart);
         }
     })
-
-
-
-// #whXxOBlYS0H
-// - взяти https://dummyjson.com/docs/recipes та вивести інформацію про всі рецепти. Інгредієнти повинні бути список під час відображення.
